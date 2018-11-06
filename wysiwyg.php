@@ -206,7 +206,7 @@
         <!-- Text Background Colors -->
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="bgcolor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-fill-drip" data-toggle="tooltip" data-placement="bottom" title="text backgroun color"></i>
+                <i class="fas fa-fill-drip" data-toggle="tooltip" data-placement="bottom" title="text background color"></i>
             </button>
             <div class="dropdown-menu dropdown-menu-right wysiwyg-colors" aria-labelledby="bgcolor">
                 <span class="mybg" data-bg="#000000" style="background-color:#000000;"></span>
