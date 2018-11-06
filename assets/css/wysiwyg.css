@@ -1,132 +1,88 @@
+@charset "UTF-8";
 body{
-    background-image:-webkit-linear-gradient(325deg, #07051A 0%, #5342B2 53%, #C86DD7 120%);
-    background-image:linear-gradient(125deg, #07051A 0%, #5342B2 53%, #C86DD7 120%);
-    background-size:cover;
-    background-attachment:fixed;
+    background-color: #eceff4;
 }
-.wrap{
-    padding:80px 20px;
+.wrapper{
+    padding:0 20px;
+    max-width: 1024px;
+    margin: auto;
 }
-#wysiwyg{
-    max-width:665px;
-    margin:auto;
-    -webkit-box-shadow:0 2px 8px 0 rgba(0,0,0,.2);
-    -moz-box-shadow:0 2px 8px 0 rgba(0,0,0,.2);
-    box-shadow:0 2px 8px 0 rgba(0,0,0,.2);
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
-    overflow:hidden;
-}
-#wysiwyg textarea{
-    display:none;
-}
-#wysiwyg iframe{
+.wysiwyg{
     width:100%;
-    height:250px;
-    margin:0;
-    padding:0;
-    border:0;
-    overflow-y:scroll;
 }
-#wysiwyg .panel{
-    border-radius:0;
-    margin-bottom:0;
+.header{
+    text-align: center;
+    color: #6c7a86;
+    padding:50px 0 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-size: 35px;
 }
-#wysiwyg .panel-body{
-    padding:0;
+.wysiwyg input,
+.wysiwyg button,
+.wysiwyg textarea{
+    box-shadow: none!important;
 }
-#wysiwyg .panel-default>.panel-heading{
-    background-color:#F0F0F0;
+.wysiwyg-content,
+.wysiwyg-buttons,
+.wysiwyg-content .editor{
+    background-color: #fff;
 }
-#wysiwyg .dropdown{
-    display:inline-block;
+.wysiwyg-buttons{
+    min-height: 2px;
+    padding: 10px;
+    background-color: #f6f8fa;
+    border-top: 1px solid #d8e2e7;
+    border-left: 1px solid #d8e2e7;
+    border-right: 1px solid #d8e2e7;
 }
-#wysiwyg .dropdown-menu .divider{
-    margin:2px 0;
+.wysiwyg-content{
+    height: 200px;
+    border: 1px solid #d8e2e7;
 }
-#wysiwyg .wysiwyg_footer{
-    border-right:1px solid #DDD;
-    border-left:1px solid #ddd;
-    padding:10px;
-    background-color:#FFF;
+.wysiwyg-buttons .btn{
+    background-color: transparent;
+    border: 0;
+    color: #6c7a86;
+}
+.wysiwyg-buttons .btn:focus,
+.wysiwyg-buttons .btn:hover{
+    box-shadow: none;
+    background-color: #bcc3ca;
+    color: #fff;
+}
+.wysiwyg-content iframe{
+    width: 100%!important;
+    height: 100%!important;
+    border: 0!important;
+}
+.wysiwyg .fontname,
+.wysiwyg .fontsize{
+    padding: 3px 10px;
+    cursor: pointer;
+    color: #6c7a86;
+}
+.wysiwyg .dropdown{
+    display: inline-block!important;
 }
 .wysiwyg-colors{
-    padding:5px;
-    min-width:180px;
+    max-width: 180px;
+    padding: 8px;
 }
-.wysiwyg-colors span{
-    float:left;
-    width:19px;
-    height:19px;
-    cursor:pointer;
-    margin:1px;
+.wysiwyg .mycolor,
+.wysiwyg .mybg{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #e3ebef;
 }
-#wysiwyg .input-group{
-    margin:5px 0;
-    float:left;
+.wysiwyg-content textarea{
+    display: none;
 }
-.wysiwyg-color-input{
-    border:1px solid #d1d1d1;
-}
-
-.modal-content{
-    padding:20px;
-}
-.linkval,
-.imageval{
-    margin-bottom:8px;
-}
-.link span,
-.myimage span{
-    font-size:13px;
-    margin-right:7px;
-}
-#wysiwyg .btn-default:hover,
-#wysiwyg .btn-default:focus,
-#wysiwyg .btn-default:active,
-#wysiwyg .btn-default{
-    margin:0;
-    border:0;
-    background-color:transparent;
-    color:#48494a;
-}
-
-*,button,input,select,textarea,label,
-a,a:hover,a:focus,a:active,
-button:focus,button:active,button:hover,
-.btn:focus,.btn:active,
-.bootstrap-select .btn:focus,
-textarea:focus,
-input[type="text"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus,
-.form-control:focus{
-    box-shadow:none;
-    outline:none !important;
-}
-
-button[type=submit]:hover,
-.custom-bg:hover,
-.custom-color:hover,
-.myimage:hover,
-button[type=submit],
-.custom-bg,
-.custom-color,
-.myimage{
-    border:1px solid #d1d1d1;
+.submit-btn{
+    background-color: #f6f8fa;
+    color: #6c7a86;
+    border: 1px solid #d8e2e7;
 }
